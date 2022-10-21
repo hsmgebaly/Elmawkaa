@@ -167,7 +167,7 @@
               class="form-input"
               maxlength="50"
               pattern="[A-Za-z]{1,50}"
-              title="Name can not contain numbers"
+              title="برجاء ادخال اسم صحيح"
             />
           </div>
 
@@ -251,10 +251,13 @@
               >أقل كمية يمكنك تورديها *
             </label>
             <input
-              type="text"
+              type="number"
               name="MinQuantity"
               id="MinQuantity"
               required
+              min="1"
+              step="1"
+              value="1"
               class="form-input-50"
             />
           </div>
@@ -309,7 +312,7 @@
                 class="form-input-50"
                 maxlength="50"
                 pattern="[A-Za-z]{1,50}"
-                title="Name can not contain numbers"
+                title="برجاء ادخال اسم صحيح ولا يحتوى على أرقام"
               />
             </div>
 
@@ -324,8 +327,8 @@
                 required
                 maxlength="11"
                 class="form-input-50"
-                pattern="/^01[0125][0-9]{8}$/"
-                title="Phone Number can not contain alphapets"
+                pattern="^01[0125][0-9]{8}$"
+                title="برجاء ادخال رقم موبايل صحيح (بالأرقام الانجليزية) يعمل في مصر بدون كود الدولة مثال: 01012345678"
               />
             </div>
 
@@ -339,8 +342,8 @@
                 id="altphone"
                 maxlength="11"
                 class="form-input-50"
-                pattern="/^01[0125][0-9]{8}$/"
-                title="Please write a correct Egyptian mobile number"
+                pattern="^01[0125][0-9]{8}$"
+                title="برجاء ادخال رقم موبايل صحيح (بالأرقام الانجليزية) يعمل في مصر بدون كود الدولة مثال: 01012345678"
               />
             </div>
 
@@ -367,7 +370,7 @@
                 class="form-input-50"
                 pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                 maxlength="50"
-                title="Please Write a correct email address"
+                title="برجاء ادخال ايميل  صحيح (بالأرقام الانجليزية): example@example.com"
               />
             </div>
           </div>
@@ -418,8 +421,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-    <!-- Link Validation JavaScript file -->
-    <script src="validation.js"></script>
   </body>
 </html>

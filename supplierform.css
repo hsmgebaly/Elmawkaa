@@ -1,9 +1,9 @@
 /* Background Image */
 .bg-img-white {
-  background-image: url(/imgs/Main/home-bg-white.jpg);
+  background-image: url(home/home-bg-white.jpg);
   background-position: top;
   background-size: cover;
-  z-index: -5;
+  z-index: -1;
 }
 
 .form-container {

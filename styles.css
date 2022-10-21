@@ -232,10 +232,10 @@ nav {
       rgba(19, 19, 19, 0.4),
       rgba(19, 19, 19, 0.4)
     ),
-    url(imgs/Main/home-bg.jpg);
+    url(home/home-bg.jpg);
   background-position: top;
   background-size: cover;
-  z-index: -5;
+  z-index: -1;
 }
 
 .hero-section {
