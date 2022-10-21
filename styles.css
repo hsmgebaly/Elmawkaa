@@ -232,7 +232,7 @@ nav {
       rgba(19, 19, 19, 0.4),
       rgba(19, 19, 19, 0.4)
     ),
-    url(/imgs/Main/home-bg1\ -\ Copy.jpg);
+    url(imgs/Main/home-bg.jpg);
   background-position: top;
   background-size: cover;
   z-index: -5;
@@ -262,12 +262,6 @@ nav {
 
 /* //////////////////////////////////// */
 /* Materials section */
-
-/* .material-readymix::before {
-  content: "";
-  background-image: url(./imgs/Materials/Readymix.jpg);
-  background-repeat: no-repeat;
-} */
 
 .materials {
   gap: 1.5rem;
