@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<!-- Page language Arabic -->
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- website title -->
+    <title>سجل حساب الموردين بمنصة الموقع elmawkaa.com</title>
+
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="supplierform.css" />
+
+    <!-- Search description -->
+    <meta
+      name="description"
+      content="Elmawkaa is an intelligent marketplace for building materials.
+    We help contractors, Engineers even property owners to get competitive, accurate quotations for their materials, from our vetted suppliers, in a few minutes in a documented & automated process through our innovation the matching algorithms."
+    />
+
+    <!-- FavIcon for browser -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./imgs/favicon/favicon-16x28.png"
+    />
+
+    <!-- Add website as an Icon on Iphone home screen -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./imgs/favicon/apple-icon-180x180.p"
+    />
+
+    <!-- Add website as an Icon on andriod home screen -->
+    <link rel="manifest" href="/imgs/favicon/manifest.json" />
+
+    <!-- Google font Noto Kufi Arabic -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- background image -->
+
+    <!-- Nav Bar section -->
+    <header>
+      <nav class="container flex">
+        <!-- Right Part of Nav -->
+        <div class="main-nav right-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <img
+                src="/imgs/nav/logo.png"
+                alt="Elmawkaa-logo"
+                class="nav-logo"
+              />
+            </li>
+
+            <li class="main-nav-link">
+              <a href="index.html#material-section" class="main-nav-link"
+                >مواد البناء</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="index.html##quotation-section" class="main-nav-link"
+                >أحدث الطلبيات</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="index.html##how-section" class="main-nav-link"
+                >كيف يعمل؟</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="index.html#join-supplier" class="main-nav-link"
+                >سجل كمورد
+              </a>
+            </li>
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/Blog" class="main-nav-link"
+                >المدونة
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/RFQpricing" class="main-nav-link"
+                >الباقات
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="index.html#join-call" class="main-nav-link">اتصل بنا </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Left Part of Nav -->
+        <div class="main-nav left-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <a
+                href="https://elmawkaa.com/dashboardv2/auth/login"
+                class="main-nav-link flex login"
+              >
+                <ion-icon name="person" class="login-icon"></ion-icon>
+                <p>تسجيل دخول</p>
+                <p class="new-login">جديد</p>
+              </a>
+            </li>
+
+            <li class="main-nav-link country">
+              <a href="#" class="main-nav-link dropbtn flex">
+                <img
+                  src="/imgs/nav/Flag_of_Egypt.png"
+                  alt="Egypt-flag"
+                  class="egy-flag flag"
+                />
+                <ion-icon
+                  name="caret-down-outline"
+                  class="arrow dwn"
+                ></ion-icon>
+              </a>
+
+              <div class="dropdown-content flex">
+                <a href="https://saudi.elmawkaa.com/" class="flex"
+                  ><img
+                    src="/imgs/nav/saudi-arabia-flag.jpg"
+                    alt="Egypt-flag"
+                    class="ksa-flag flag"
+                  />
+                  <p>المملكة العربية السعودية</p></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Form Section -->
+
+    <div class="bg-img-white">
+      <main class="form-container">
+        <div class="form-bg">
+          <h2 class="form-head">تسجيل حساب مورد جديد</h2>
+        </div>
+        <form class="form-content" action="#" method="post" name="main_form">
+          <div>
+            <label for="companyname" class="form-title"
+              >اسم شركتك ايه؟ *
+            </label>
+            <input
+              type="text"
+              name="companyname"
+              id="companyname"
+              required
+              class="form-input"
+              maxlength="50"
+              pattern="[A-Za-z]{1,50}"
+              title="Name can not contain numbers"
+            />
+          </div>
+
+          <div>
+            <p class="form-title">هل الشركة مسجلة</p>
+            <div class="radio flex">
+              <div>
+                <input
+                  type="radio"
+                  name="officialcompany"
+                  id="yes"
+                  value="yes"
+                  checked="checked"
+                />
+                <label for="yes">نعم</label>
+              </div>
+              <div>
+                <input type="radio" name="officialcompany" id="no" value="no" />
+                <label for="No">لا </label>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="regionserved" class="form-title"
+              >المناطق التي تورد لها *
+            </label>
+            <select
+              name="regionserved"
+              id="regionserved"
+              multiple
+              required
+              class="form-input-margin"
+            >
+              <option value=""></option>
+              <option value="Cairo">القاهرة</option>
+              <option value="Alexandria">الأسكندرية</option>
+              <option value="Giza">الجيزة</option>
+              <option value="October">السادس من أكتوبر</option>
+            </select>
+            <p class="form-help">
+              اختيارك للمناطق بدقة يضمن وصول طلبيات مناسبة لك
+            </p>
+          </div>
+
+          <div>
+            <label for="products" class="form-title">منتجاتك* </label>
+            <select
+              name="products"
+              id="products"
+              multiple
+              required
+              class="form-input"
+            >
+              <option value=""></option>
+              <option value="readymix-cement">خرسانة جاهزة</option>
+              <option value="packagedcement">أسمنت معبأ</option>
+              <option value="Cement">أسمنت سايب</option>
+              <option value="steel">حديد تسليح</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="MoreProducts" class="form-title"
+              >إذا كان لديك منتجات أخرى اكتبها هنا
+            </label>
+            <textarea
+              class="form-input-margin"
+              name="MoreProducts"
+              id="MoreProducts"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="form-help">
+              يمكنك استخدام الفاصلة "،" لإضافة أكثر من منتج
+            </p>
+          </div>
+
+          <div>
+            <label for="MinQuantity" class="form-title"
+              >أقل كمية يمكنك تورديها *
+            </label>
+            <input
+              type="text"
+              name="MinQuantity"
+              id="MinQuantity"
+              required
+              class="form-input-50"
+            />
+          </div>
+
+          <div>
+            <label for="companytype" class="form-title">نوع الشركة * </label>
+            <select
+              name="companytype"
+              id="companytype"
+              multiple
+              required
+              class="form-input-50"
+            >
+              <option value="factory">مصنع</option>
+              <option value="agent">وكيل</option>
+              <option value="Showroom">معرض</option>
+              <option value="seller">تاجر</option>
+              <option value="store">مخزن</option>
+              <option value="supplier">موان</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="companylocation" class="form-title">
+              *مقر الشركة
+            </label>
+            <select
+              name="companylocation"
+              id="companylocation"
+              multiple
+              required
+              class="form-input-50"
+            >
+              <option value="Cairo">القاهرة</option>
+              <option value="Alexandria">الأسكندرية</option>
+              <option value="Giza">الجيزة</option>
+              <option value="October">السادس من أكتوبر</option>
+            </select>
+          </div>
+
+          <div>
+            <p class="form-section-head">بيانات ممثل الشركة</p>
+            <div>
+              <label for="fullname" class="form-title"
+                >اسم الشخص المفوض ثنائي *
+              </label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                required
+                class="form-input-50"
+                maxlength="50"
+                pattern="[A-Za-z]{1,50}"
+                title="Name can not contain numbers"
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="form-title"
+                >رقم الموبايل المسجل عالواتساب *
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                maxlength="11"
+                class="form-input-50"
+                pattern="/^01[0125][0-9]{8}$/"
+                title="Phone Number can not contain alphapets"
+              />
+            </div>
+
+            <div>
+              <label for="altphone" class="form-title"
+                >أرقام تليفون أخرى للتواصل
+              </label>
+              <input
+                type="tel"
+                name="altphone"
+                id="altphone"
+                maxlength="11"
+                class="form-input-50"
+                pattern="/^01[0125][0-9]{8}$/"
+                title="Please write a correct Egyptian mobile number"
+              />
+            </div>
+
+            <div>
+              <label for="position" class="form-title"
+                >وظيفتك في الشركة *
+              </label>
+              <input
+                type="text"
+                name="position"
+                id="position"
+                required
+                class="form-input-50"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="form-title">ايميلك</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="form-input-50"
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                maxlength="50"
+                title="Please Write a correct email address"
+              />
+            </div>
+          </div>
+
+          <p class="form-help">
+            ملحوظة: لاكتمال ملفك برجاء ارسال صورة البطاقة الشخصية والسجل التجارى
+            والبطاقة الضريبية على الواتساب على +201555599338 أو الإيميل
+            info@elmawkaa.com
+          </p>
+          <button type="submit" class="form-btn">سجل</button>
+        </form>
+      </main>
+
+      <footer class="copyright">
+        <div class="flex copyright-container container">
+          <div class="copyright-right flex">
+            <a href="https://elmawkaa.com/bookCall" class="copyright-call">
+              <p class="copyright-title">
+                <span class="copyright-orng">احجز مكالمة </span>مع أحد خبرائنا
+              </p>
+            </a>
+            <a href="https://www.linkedin.com/company/elmawkaa">
+              <ion-icon name="logo-linkedin" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/elmawkaa/">
+              <ion-icon name="logo-instagram" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://twitter.com/Elmawkaa1">
+              <ion-icon name="logo-twitter" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/ElMawkaa/">
+              <ion-icon name="logo-facebook" class="copyright-icon"></ion-icon>
+            </a>
+          </div>
+          <p class="copyright-text">
+            حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Link Validation JavaScript file -->
+    <script src="validation.js"></script>
+  </body>
+</html>

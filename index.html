@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<!-- Page language Arabic -->
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- website title -->
+    <title>الموقع - سوق أونلاين لمواد البناء فى مصر</title>
+
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <!-- Search description -->
+    <meta
+      name="description"
+      content="Elmawkaa is an intelligent marketplace for building materials.
+    We help contractors, Engineers even property owners to get competitive, accurate quotations for their materials, from our vetted suppliers, in a few minutes in a documented & automated process through our innovation the matching algorithms."
+    />
+
+    <!-- FavIcon for browser -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./imgs/favicon/favicon-16x28.png"
+    />
+
+    <!-- Add website as an Icon on Iphone home screen -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./imgs/favicon/apple-icon-180x180.p"
+    />
+
+    <!-- Add website as an Icon on andriod home screen -->
+    <link rel="manifest" href="/imgs/favicon/manifest.json" />
+
+    <!-- Google font Noto Kufi Arabic -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav Bar section -->
+    <header>
+      <nav class="container flex">
+        <!-- Right Part of Nav -->
+        <div class="main-nav right-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <img
+                src="/imgs/nav/logo.png"
+                alt="Elmawkaa-logo"
+                class="nav-logo"
+              />
+            </li>
+
+            <li class="main-nav-link">
+              <a href="#material-section" class="main-nav-link">مواد البناء</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#quotation-section" class="main-nav-link"
+                >أحدث الطلبيات</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="#how-section" class="main-nav-link">كيف يعمل؟</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="#join-supplier" class="main-nav-link">سجل كمورد </a>
+            </li>
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/Blog" class="main-nav-link"
+                >المدونة
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/RFQpricing" class="main-nav-link"
+                >الباقات
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="#join-call" class="main-nav-link">اتصل بنا </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Left Part of Nav -->
+        <div class="main-nav left-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <a
+                href="https://elmawkaa.com/dashboardv2/auth/login"
+                class="main-nav-link flex login"
+              >
+                <ion-icon name="person" class="login-icon"></ion-icon>
+                <p>تسجيل دخول</p>
+                <p class="new-login">جديد</p>
+              </a>
+            </li>
+
+            <li class="main-nav-link country">
+              <a href="#" class="main-nav-link dropbtn flex">
+                <img
+                  src="/imgs/nav/Flag_of_Egypt.png"
+                  alt="Egypt-flag"
+                  class="egy-flag flag"
+                />
+                <ion-icon
+                  name="caret-down-outline"
+                  class="arrow dwn"
+                ></ion-icon>
+              </a>
+
+              <div class="dropdown-content flex">
+                <a href="https://saudi.elmawkaa.com/" class="flex"
+                  ><img
+                    src="/imgs/nav/saudi-arabia-flag.jpg"
+                    alt="Egypt-flag"
+                    class="ksa-flag flag"
+                  />
+                  <p>المملكة العربية السعودية</p></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+
+    <div class="bg-img">
+      <main class="container hero-section">
+        <h1 class="hero-head">تعبت من عملية شراء مواد البناء في مصر؟</h1>
+        <p class="hero-text">
+          اطلب عروض أسعار دلوقتي أونلاين من أكبر قاعدة بيانات للموردين في مصر
+        </p>
+        <a href="https://elmawkaa.com/bookCall" class="btn hero-btn"
+          >احجز مكالمة مع أحد خبرائنا</a
+        >
+      </main>
+    </div>
+
+    <!-- Material Section -->
+    <section class="container materials-section" id="material-section">
+      <h2 class="materials-head head">اطلب عروض أسعار لمواد البناء الآن</h2>
+      <div class="materials grid grid-3">
+        <a
+          class="material material-readymix"
+          href="https://elmawkaa.com/RFQFormV2?id=4&product_name=%D8%AE%D8%B1%D8%B3%D8%A7%D9%86%D8%A9%20%D8%AC%D8%A7%D9%87%D8%B2%D8%A9"
+        >
+          <img
+            src="/imgs/Materials/Readymix.jpg"
+            alt="readymix-cement-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">خرسانة جاهزة</p>
+          <ul class="material-list flex">
+            <li class="material-tag">قواعد</li>
+            <li class="material-tag">أعمدة</li>
+            <li class="material-tag">بلاطات</li>
+            <li class="material-tag">أرضيات</li>
+            <li class="material-tag">مقاوم</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-packagedcement"
+          href="https://elmawkaa.com/RFQFormV2?id=1&product_name=%D8%A3%D8%B3%D9%85%D9%86%D8%AA%20%D9%85%D8%B9%D8%A8%D8%A3"
+        >
+          <img
+            src="/imgs/Materials/packagedcement.jpg"
+            alt="cement-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">أسمنت معبأ</p>
+          <ul class="material-list flex">
+            <li class="material-tag">أسمنت السويس</li>
+            <li class="material-tag">شكاير أسمنت</li>
+            <li class="material-tag">شيكارة</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-cement"
+          href="https://elmawkaa.com/RFQFormV2?id=14&product_name=%D8%A3%D8%B3%D9%85%D9%86%D8%AA%20%D8%B3%D8%A7%D9%8A%D8%A8"
+        >
+          <img
+            src="/imgs/Materials/cement.jpg"
+            alt="cement-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">أسمنت سايب</p>
+          <ul class="material-list flex">
+            <li class="material-tag">أسمنت السويس</li>
+            <li class="material-tag">بنى سويف</li>
+            <li class="material-tag">السويدى</li>
+            <li class="material-tag">حلوان</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-steel"
+          href="https://elmawkaa.com/RFQFormV2?id=2&product_name=%D8%AD%D8%AF%D9%8A%D8%AF%20%D8%AA%D8%B3%D9%84%D9%8A%D8%AD"
+        >
+          <img
+            src="/imgs/Materials/steel.jpg"
+            alt="steel-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">حديد تسليح</p>
+          <ul class="material-list flex">
+            <li class="material-tag">عز</li>
+            <li class="material-tag">المصريين</li>
+            <li class="material-tag">العتال</li>
+            <li class="material-tag">بشاى</li>
+            <li class="material-tag">الدخيلة</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-cement"
+          href="https://elmawkaa.com/RFQFormV2?id=3&product_name=%D8%B7%D9%88%D8%A8%20%D8%A3%D8%AD%D9%85%D8%B1%20%D8%B7%D9%81%D9%84%D9%89%20%D9%85%D9%81%D8%B1%D8%BA"
+        >
+          <img
+            src="/imgs/Materials/redblock.jpg"
+            alt="red-block-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">طوب أحمر طفلى مفرغ</p>
+          <ul class="material-list flex">
+            <li class="material-tag">طوبة مقاس عادى</li>
+            <li class="material-tag">طوبة مقاس دوبل</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=9&product_name=%D8%B7%D9%88%D8%A8%20%D8%A3%D8%B3%D9%85%D9%86%D8%AA%D9%8A%20%D9%85%D8%B5%D9%85%D8%AA"
+        >
+          <img
+            src="/imgs/Materials/solidblock.jpg"
+            alt="solid-block-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">طوب أسمنتى مصمت</p>
+          <ul class="material-list flex">
+            <li class="material-tag">نص اّلى</li>
+            <li class="material-tag">اّلى</li>
+            <li class="material-tag">أسمنتى مصمت</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=200&product_name=%D8%A8%D9%84%D9%88%D9%83%20%D8%A3%D8%B3%D9%85%D9%86%D8%AA%D9%8A%20%D9%85%D9%81%D8%B1%D8%BA"
+        >
+          <img
+            src="/imgs/Materials/hollowblock.jpg"
+            alt="Hollow-block-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">بلوك أسمنتى مفرغ</p>
+          <ul class="material-list flex">
+            <li class="material-tag">نص اّلى</li>
+            <li class="material-tag">اّلى</li>
+            <li class="material-tag">أسمنتى مفرغ</li>
+            <li class="material-tag">بلوكات أسمنيتة</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=149&product_name=%D8%A8%D9%84%D8%A7%D8%B7%20%D9%85%D9%88%D8%B2%D8%A7%D9%8A%D9%83%D9%88"
+        >
+          <img
+            src="/imgs/Materials/mosaicotile.jpg"
+            alt="Mosaico-Tiles-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">بلاط موزايكو</p>
+          <ul class="material-list flex">
+            <li class="material-tag">بلاط حصوة</li>
+            <li class="material-tag">بلاط أسمنتى</li>
+            <li class="material-tag">بلاط موزايكو</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=23&product_name=%D8%A8%D9%84%D8%A7%D8%B7%20%D8%A7%D9%86%D8%AA%D8%B1%D9%84%D9%88%D9%83"
+        >
+          <img
+            src="/imgs/Materials/interlocktiles.jpg"
+            alt="Interlock-Tiles-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">بلاط انترلوك</p>
+          <ul class="material-list flex">
+            <li class="material-tag">بلاط انترلوك</li>
+            <li class="material-tag">بلاط رصيف</li>
+            <li class="material-tag">بلاط خرسانى متداخل</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=152&product_name=%D8%A3%D9%84%D9%8A%D8%A7%D9%81%20%D8%AD%D8%AF%D9%8A%D8%AF%D9%8A%D8%A9%20%D9%84%D9%84%D8%AE%D8%B1%D8%B3%D8%A7%D9%86%D8%A9"
+        >
+          <img
+            src="/imgs/Materials/strandedfiber.jpg"
+            alt="stranded-fiber-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">ألياف حديدية للخرسانة</p>
+          <ul class="material-list flex">
+            <li class="material-tag">Straight Fiber</li>
+            <li class="material-tag">Hooked Fiber</li>
+            <li class="material-tag">Stranded Fiber</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=7&product_name=%D8%B1%D9%85%D9%84"
+        >
+          <img
+            src="/imgs/Materials/sand.jpg"
+            alt="Sand-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">رمل</p>
+          <ul class="material-list flex">
+            <li class="material-tag">رمل خشن</li>
+            <li class="material-tag">رمل حرش</li>
+            <li class="material-tag">رمل خالى من المواد العضوية</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=162&product_name=%D9%85%D9%88%D8%A7%D8%AF%20%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9"
+        >
+          <img
+            src="/imgs/Materials/electrical.jpg"
+            alt="Electical-equipments-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">مواد كهربائية</p>
+          <ul class="material-list flex">
+            <li class="material-tag">لوحات توزيع الكهرباء</li>
+            <li class="material-tag">طاقة شمسية</li>
+            <li class="material-tag">مقاتيح اضاءة</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2?id=160&product_name=%D9%85%D9%88%D8%A7%D8%AF%20%D8%B3%D8%A8%D8%A7%D9%83%D8%A9"
+        >
+          <img
+            src="/imgs/Materials/plumbing.jpg"
+            alt="plimbing-equipments-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">مواد سباكة</p>
+          <ul class="material-list flex">
+            <li class="material-tag">مواسير التغذية</li>
+            <li class="material-tag">الطلبمات</li>
+            <li class="material-tag">البيب والجريليات</li>
+          </ul>
+        </a>
+
+        <a
+          class="material material-solid-block"
+          href="https://elmawkaa.com/RFQFormV2"
+        >
+          <img
+            src="/imgs/Materials/misc.jpg"
+            alt="different-kind-of-bricks-image"
+            class="material-img"
+          />
+          <div class="purple-line"></div>
+          <p class="material-title">مواد بناء أخرى</p>
+          <ul class="material-list flex">
+            <li class="material-tag">قطاعات حديد</li>
+            <li class="material-tag">أبواب وشبابيك</li>
+            <li class="material-tag">فايبر ستيل</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <!-- /////////////////////////////// -->
+    <!-- Quotations section -->
+    <section class="quotation-section" id="quotation-section">
+      <h2 class="quotation-head head">أحدث طلبات عروض الأسعار</h2>
+      <div class="container latest-quotations grid grid-2">
+        <div class="quotation flex flex-col">
+          <div class="quotation-title flex">
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14145">خرسانة جاهزة</a>
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14145">RFQ-14145 </a>
+          </div>
+
+          <div class="quotation-content flex">
+            <strong>30 م3</strong>
+            <span>-</span>
+            <p>الدفع كاش</p>
+            <span>-</span>
+            <p>نشرت منذ ٨ ساعات</p>
+          </div>
+          <div class="quotation-number flex">
+            <p>عروض الأسعار:</p>
+            <strong>2</strong>
+          </div>
+          <div class="quotation-location flex">
+            <p>القاهرة الجديدة - التجمع - القاهرة</p>
+            <ion-icon name="location" class="location"></ion-icon>
+          </div>
+        </div>
+
+        <div class="quotation flex flex-col">
+          <div class="quotation-title flex">
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14144"> حديد تسليح</a>
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14144">RFQ-14144 </a>
+          </div>
+
+          <div class="quotation-content flex">
+            <strong>30 طن</strong>
+            <span>-</span>
+            <p>الدفع كاش</p>
+            <span>-</span>
+            <p>نشرت منذ ١٠ ساعات</p>
+          </div>
+          <div class="quotation-number flex">
+            <p>عروض الأسعار:</p>
+            <strong>2</strong>
+          </div>
+          <div class="quotation-location flex">
+            <p>القاهرة الجديدة - التجمع - القاهرة</p>
+            <ion-icon name="location" class="location"></ion-icon>
+          </div>
+        </div>
+
+        <div class="quotation flex flex-col">
+          <div class="quotation-title flex">
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14141"> حديد تسليح</a>
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14141">RFQ-14141 </a>
+          </div>
+
+          <div class="quotation-content flex">
+            <strong>27 طن</strong>
+            <span>-</span>
+            <p>الدفع كاش</p>
+            <span>-</span>
+            <p>نشرت منذ ١٢ ساعة</p>
+          </div>
+          <div class="quotation-number flex">
+            <p>عروض الأسعار:</p>
+            <strong>0</strong>
+          </div>
+          <div class="quotation-location flex">
+            <p>السويس - السويس</p>
+            <ion-icon name="location" class="location"></ion-icon>
+          </div>
+        </div>
+
+        <div class="quotation flex flex-col">
+          <div class="quotation-title flex">
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14135"> حديد تسليح</a>
+            <a href="https://elmawkaa.com/RFQBid?sn=RFQ-14135">RFQ-14135 </a>
+          </div>
+
+          <div class="quotation-content flex">
+            <strong> 80 م3</strong>
+            <span>-</span>
+            <p>الدفع كاش</p>
+            <span>-</span>
+            <p>نشرت منذ ٢٠ ساعة</p>
+          </div>
+          <div class="quotation-number flex">
+            <p>عروض الأسعار:</p>
+            <strong>5</strong>
+          </div>
+          <div class="quotation-location flex">
+            <p>الشيخ زايد - الجيزة</p>
+            <ion-icon name="location" class="location"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://elmawkaa.com/RFQFeed" class="btn quotation-btn"
+        >اعرض جميع الطلبيات
+      </a>
+    </section>
+
+    <!-- //////////////////////// -->
+    <!-- How it work -->
+    <section class="container how-section" id="how-section">
+      <h2 class="head how-head">كيف تعمل منصة الموقع؟</h2>
+      <div class="how-steps grid grid-3">
+        <div class="steps">
+          <a href="https://elmawkaa.com/HowToContractor">
+            <ion-icon name="checkmark" class="steps-icon"></ion-icon>
+          </a>
+          <p class="steps-title">اختار مواد البناء المطلوبة</p>
+          <img
+            class="steps-img"
+            src="/imgs/How-it-works/01-select-product.png"
+            alt="mobile screen shown how elmawkaa platform works"
+          />
+        </div>
+
+        <div class="steps">
+          <a href="https://elmawkaa.com/HowToContractor">
+            <ion-icon name="diamond" class="steps-icon"></ion-icon>
+          </a>
+          <p class="steps-title">املأ البيانات واطلب عرض سعر</p>
+          <img
+            class="steps-img"
+            src="/imgs/How-it-works/02-fill-form.png"
+            alt="mobile screen shown how elmawkaa platform works"
+          />
+        </div>
+
+        <div class="steps">
+          <a href="https://elmawkaa.com/HowToContractor">
+            <ion-icon name="paper-plane" class="steps-icon"></ion-icon>
+          </a>
+          <p class="steps-title">اختار أحسن عرض ونفذ الطلبية</p>
+          <img
+            class="steps-img"
+            src="/imgs/How-it-works/03-select-quotation.png"
+            alt="mobile screen shown how elmawkaa platform works"
+          />
+        </div>
+      </div>
+
+      <a href="https://elmawkaa.com/HowToContractor" class="btn how-btn"
+        >خطوات طلب عروض الأسعار
+      </a>
+    </section>
+
+    <!-- ///////////////////////// -->
+    <!-- Join as a Supplier section -->
+
+    <section class="join-supplier" id="join-supplier">
+      <p class="join-head head">انضم لنا كمورد</p>
+      <a href="https://elmawkaa.com/HowToContractor" class="btn join-steps-btn"
+        >خطوات التسجيل وتقديم عروض الأسعار
+      </a>
+
+      <div class="join-steps container grid grid-4">
+        <div class="join-step">
+          <a href="https://elmawkaa.com/HowToSupplier">
+            <ion-icon name="pencil" class="join-icon"></ion-icon>
+          </a>
+          <p class="join-title">املأ نموذج التسجيل</p>
+          <p class="join-text">
+            املأ معلومات شركتك ومنتجاتك لنتمكن من التحقق منها
+          </p>
+        </div>
+
+        <div class="join-step">
+          <a href="https://elmawkaa.com/HowToSupplier">
+            <ion-icon name="checkmark" class="join-icon"></ion-icon>
+          </a>
+          <p class="join-title">وثق معلوماتك</p>
+          <p class="join-text">
+            سوف نراجع بياناتك في خلال 48 ساعة ونقوم من التحقق من معلوماتك
+          </p>
+        </div>
+
+        <div class="join-step">
+          <a href="https://elmawkaa.com/HowToSupplier">
+            <ion-icon name="diamond" class="join-icon"></ion-icon>
+          </a>
+          <p class="join-title">احصل على طلبات عروض أسعار</p>
+          <p class="join-text join-text-2">
+            تحكم في عروض أسعارك وقم بتقديم العروض
+          </p>
+          <p class="join-text">
+            كن سريع في الرد على طلبات عروض الأسعار، عملاءنا يعتمدون عليك
+          </p>
+        </div>
+
+        <div class="join-step">
+          <a href="https://elmawkaa.com/HowToSupplier">
+            <ion-icon name="paper-plane" class="join-icon"></ion-icon>
+          </a>
+          <p class="join-title">املأ نموذج التسجيل</p>
+          <p class="join-text">
+            املأ معلومات شركتك ومنتجاتك لنتمكن من التحقق منها
+          </p>
+        </div>
+      </div>
+
+      <a href="supplierform.html" target="_blank" class="join-btn"
+        >انضم لنا كمورد</a
+      >
+    </section>
+
+    <section class="partners-section container">
+      <h2 class="partners-head head">شركاؤنا</h2>
+      <p class="partners-text">شركاؤنا هم مصدر نجاحنا</p>
+    </section>
+
+    <!-- Slider -->
+    <ul class="slick-slider">
+      <li>
+        <img class="img-slider" src="imgs/Parteners/11.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/12.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/13.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/14.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/15.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/16.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/17.jpg" alt="" />
+      </li>
+
+      <li>
+        <img class="img-slider" src="imgs/Parteners/18.jpg" alt="" />
+      </li>
+    </ul>
+
+    <!-- ///////////////////// -->
+    <!-- Join to the platform with a call -->
+    <section class="join-call" id="join-call">
+      <h2 class="join-call-head head">انضم الى قادة المقاولين بمنصة الموقع</h2>
+      <p class="join-call-title">ووفر وقت وفلوس إدارة مشترياتك</p>
+      <p class="join-call-text">ابدأ الآن واحجز مكالمة مع أحد خبرائنا</p>
+      <a href="https://elmawkaa.com/bookCall" class="join-call-btn"
+        >احجز مكالمة</a
+      >
+    </section>
+
+    <!-- ////////////////////////// -->
+    <!-- Footer Section -->
+    <footer>
+      <div class="grid grid-footer container">
+        <div class="email">
+          <ion-icon name="mail" class="footer-icon"></ion-icon>
+          <p class="footer-title">البريد الكتروني</p>
+          <p class="footer-text">
+            <a href="info@elmawkaa.com">Info@elmawkaa.com</a>
+          </p>
+        </div>
+        <div class="mobile">
+          <ion-icon name="call" class="footer-icon"></ion-icon>
+          <p class="footer-title">هاتف</p>
+          <p class="footer-text">
+            <a href="tel:(+20) 100 282 0786">(+20) 100 282 0786</a>
+          </p>
+        </div>
+        <address class="address">
+          <ion-icon name="location" class="footer-icon"></ion-icon>
+          <p class="footer-title">مكاننا</p>
+          <p class="footer-text">
+            - ١٧١ شارع التحرير مبني الحرم اليوناني بعابدين GrEEK Campus،
+            القاهرة، مصر
+          </p>
+          <p class="footer-text">
+            - 2035 Sunset Lake Road, Suite B-2, in the city of Newark, zip code
+            19702 and county of New Castle, USA
+          </p>
+        </address>
+      </div>
+
+      <div class="copyright">
+        <div class="flex copyright-container container">
+          <div class="copyright-right flex">
+            <a href="https://elmawkaa.com/bookCall" class="copyright-call">
+              <p class="copyright-title">
+                <span class="copyright-orng">احجز مكالمة </span>مع أحد خبرائنا
+              </p>
+            </a>
+            <a href="https://www.linkedin.com/company/elmawkaa">
+              <ion-icon name="logo-linkedin" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/elmawkaa/">
+              <ion-icon name="logo-instagram" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://twitter.com/Elmawkaa1">
+              <ion-icon name="logo-twitter" class="copyright-icon"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/ElMawkaa/">
+              <ion-icon name="logo-facebook" class="copyright-icon"></ion-icon>
+            </a>
+          </div>
+          <p class="copyright-text">
+            حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Jquery library file -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  CDN Slick slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
