@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<!-- Page language Arabic -->
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- website title -->
+    <title>الموقع - سوق أونلاين لمواد البناء فى مصر</title>
+
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="RFQForm.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <!-- Search description -->
+    <meta
+      name="description"
+      content="Elmawkaa is an intelligent marketplace for building materials.
+    We help contractors, Engineers even property owners to get competitive, accurate quotations for their materials, from our vetted suppliers, in a few minutes in a documented & automated process through our innovation the matching algorithms."
+    />
+
+    <!-- FavIcon for browser -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../imgs/favicon/favicon-16x28.png"
+    />
+
+    <!-- Add website as an Icon on Iphone home screen -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../imgs/favicon/apple-icon-180x180.png"
+    />
+
+    <!-- Add website as an Icon on andriod home screen -->
+    <link rel="manifest" href="../imgs/favicon/manifest.json" />
+
+    <!-- Google font Noto Kufi Arabic -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav Bar section -->
+    <header>
+      <nav class="container flex">
+        <!-- Right Part of Nav -->
+        <div class="main-nav right-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <a href="../index.html">
+
+                <img
+                src="../imgs/nav/logo.png"
+                alt="Elmawkaa-logo"
+                class="nav-logo"
+                />
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="../index.html#material-section" class="main-nav-link"
+                >مواد البناء</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="../index.html#quotation-section" class="main-nav-link"
+                >أحدث الطلبيات</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="../index.html#how-section" class="main-nav-link"
+                >كيف يعمل؟</a
+              >
+            </li>
+            <li class="main-nav-link">
+              <a href="../index.html#join-supplier" class="main-nav-link"
+                >سجل كمورد
+              </a>
+            </li>
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/Blog" class="main-nav-link"
+                >المدونة
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="https://elmawkaa.com/RFQpricing" class="main-nav-link"
+                >الباقات
+              </a>
+            </li>
+
+            <li class="main-nav-link">
+              <a href="#join-call" class="main-nav-link">اتصل بنا </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Left Part of Nav -->
+        <div class="main-nav left-nav">
+          <ul class="main-nav-list flex">
+            <li class="main-nav-link">
+              <a
+                href="https://elmawkaa.com/dashboardv2/auth/login"
+                class="main-nav-link flex login"
+              >
+                <ion-icon name="person" class="login-icon"></ion-icon>
+                <p>تسجيل دخول</p>
+                <p class="new-login">جديد</p>
+              </a>
+            </li>
+
+            <li class="main-nav-link country">
+              <a href="#" class="main-nav-link dropbtn flex">
+                <img
+                  src="../imgs/nav/Flag_of_Egypt.png"
+                  alt="Egypt-flag"
+                  class="egy-flag flag"
+                />
+                <ion-icon
+                  name="caret-down-outline"
+                  class="arrow dwn"
+                ></ion-icon>
+              </a>
+
+              <div class="dropdown-content flex">
+                <a href="https://saudi.elmawkaa.com/" class="flex"
+                  ><img
+                    src="../imgs/nav/saudi-arabia-flag.jpg"
+                    alt="KSA-flag"
+                    class="ksa-flag flag"
+                  />
+                  <p>المملكة العربية السعودية</p></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- //////////////////// -->
+    <!--RFQ-Cement section -->
+    <section class="rfq-cement">
+      <div class="rfq-container">
+        <a
+          href="https://elmawkaa.com/HowToContractor"
+          target="_blank"
+          class="join-btn rfq-btn-white"
+          >اضغط هنا لتعرف كيف تعمل المنصة</a
+        >
+        <p class="rfq-title">طلب عرض سعر</p>
+        <h2 class="rfq-head">أسمنت معبأ</h2>
+        <img
+          src="RFQ-cement.jpg"
+          alt="packagedcement"
+          class="rfq-material-img"
+        />
+
+        <!--steps-bar-->
+        <div class="steps-bar">
+          <!-- <div class="steps"></div> -->
+          <ul class="list">
+            <li class="step-btn">
+              <a href="#" class="step step-active">
+                <span class="step-num">1</span>
+                معلومات المنتج
+              </a>
+            </li>
+            <li>
+              <a href="#" class="step">
+                <span class="step-num">2</span>
+                المشروع
+              </a>
+            </li>
+            <li>
+              <a href="#" class="step">
+                <span class="step-num">3</span>
+                تفاصيل أخرى
+              </a>
+            </li>
+            <li>
+              <a href="#" class="step">
+                <span class="step-num">4</span>
+                ازاى نوصلك
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--RFQ Form-->
+        <div class="form-body">
+          <form action="#" method="post">
+            <!-- Form Step -1- -->
+            <div class="form-step form-active">
+              <div>
+                <label for="product-name" class="label-title"
+                  >اسم المنتج المطلوب
+                  <span>*</span>
+                </label>
+                <select name="product-name" class="input" id="product-name">
+                  <option readonly>اختر اسم المنتج المطلوب</option>
+                  <option>خرسانة جاهزة</option>
+                  <option>أسمنت معبأ</option>
+                  <option>أسمنت سايب</option>
+                  <option>حديد تسليح</option>
+                  <option>طوب أحمر طفلى مفرغ</option>
+                </select>
+              </div>
+              <div>
+                <label for="quantity" class="label-title"
+                  >الكمية
+                  <span>*</span>
+                </label>
+                <input
+                  type="number"
+                  class="input"
+                  name="quantity"
+                  placeholder="ادخل الكمية"
+                  id="quantity"
+                />
+              </div>
+              <div>
+                <label for="unit" class="label-title"
+                  >الوحدة
+                  <span>*</span>
+                </label>
+                <select name="unit" id="unit" class="input">
+                  <option readonly>اختر الوحدة</option>
+                  <option>طن</option>
+                  <option>م3</option>
+                  <option>طوبة</option>
+                  <option>بلوك</option>
+                  <option>عدد</option>
+                  <option>م2</option>
+                </select>
+              </div>
+
+              <div class="add-img">
+                <button>أضف صورة للمنتج</button>
+              </div>
+
+              <div>
+                <label for="cement-grade" class="label-title"
+                  >رتبة الأسمنت
+                  <span>*</span>
+                </label>
+                <select id="cement-grade" class="input">
+                  <option>42.5</option>
+                  <option>52.5</option>
+                  <option>32.5</option>
+                </select>
+              </div>
+              <div>
+                <label for="cementtype" class="label-title"
+                  >نوع الأسمنت
+                  <span>*</span>
+                </label>
+                <select id="cementtype" class="input">
+                  <option>عادى</option>
+                  <option>مقاوم</option>
+                </select>
+              </div>
+              <div>
+                <label class="label-title" for="factory">المصنع</label>
+                <input type="text" class="input" name="factory" id="factory" />
+              </div>
+            </div>
+
+            <!-- Form Step --2 -->
+            <div class="form-step">
+              <div>
+                <label for="projectlocation" class="label-title"
+                  >مكان المشروع
+                  <span>*</span>
+                </label>
+                <select
+                  name="projectlocation"
+                  class="input"
+                  id="projectlocation"
+                >
+                  <option>6 أكتوبر - الجيزة</option>
+                  <option>القاهرة الجديدة - التجمع - القاهرة</option>
+                  <option>العاصمة الإدارية الجديدة - القاهرة</option>
+                  <option>مدينة بدر - القاهرة</option>
+                  <option>مدينة الشروق - القاهرة</option>
+                </select>
+              </div>
+              <div>
+                <label for="projectaddress" class="label-title"
+                  >عنوان المشروع
+                  <span>*</span>
+                </label>
+                <input
+                  type="address"
+                  class="input"
+                  name="projectaddress"
+                  placeholder="ادخل عنوان المشروع"
+                  id="projectaddress"
+                />
+              </div>
+              <div>
+                <label for="siteStatus" class="label-title"
+                  >مرحلة المشروع
+                  <span>*</span>
+                </label>
+                <select name="siteStatus" class="input" id="siteStatus">
+                  <option>مرحلة التنفيذ</option>
+                  <option>مرحلة تقديم المناقصات</option>
+                </select>
+              </div>
+              <div>
+                <label for="req-date" class="label-title"
+                  >عايز تنفذ الطلبية امتي؟
+                  <span>*</span>
+                </label>
+                <input
+                  type="date"
+                  class="input"
+                  id="req-date"
+                  name="req-date"
+                />
+              </div>
+            </div>
+
+            <!-- Form Step --3 -->
+
+            <div class="form-step">
+              <div>
+                <label for="payType" class="label-title"
+                  >طريقة الدفع
+                  <span>*</span>
+                </label>
+                <select id="payType" class="input">
+                  <option>كاش أو تحويل بنكى</option>
+                  <option>اجل</option>
+                </select>
+                <p>
+                  الدفع بالآجل متاح فقط للمقاولين الذين نفذوا<br />
+                  أكثر من عمليتين وحسب شروط وموافقة المورد
+                </p>
+              </div>
+              <div >
+                <label for="details class="label-title"">تفاصيل أخرى خاصة بالطلب </label>
+                <textarea
+                  id="details"
+                  class="input"
+                  placeholder="تفاصيل أخرى مثل المواصفات والمقاسات والاعتمادات المطلوبة"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Form Step -4- -->
+            <div class="form-step">
+              <div >
+                <label for="company" class="label-title"
+                  >اسم شركتك ايه؟
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  class="input"
+                  name="company"
+                  placeholder="اسم شركتك ايه؟"
+                  id="company"
+                />
+              </div>
+              <div >
+                <label for="user" class="label-title"
+                  >اسم الشخص المفوض ثنائي
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  class="input"
+                  name="user"
+                  placeholder="اسم الشخص المفوض ثنائي"
+                  id="user"
+                />
+              </div>
+              <div>
+                <label for="phone" class="label-title"
+                  >رقم الموبايل المسجل عالواتساب
+                  <span>*</span>
+                </label>
+                <input
+                  type="phone"
+                  class="input"
+                  name="phone"
+                  placeholder=" مثال: 01012345678 "
+                  id="phone"
+                />
+              </div>
+              <div>
+                <label for="email" class="label-title">ايميلك</label>
+                <input 
+                  type="email"
+                  class="input"
+                  name="email"
+                  placeholder="مثال: mohamed@gmail.com"
+                  id="email"
+                />
+              </div>
+              <div>
+                <input type="checkbox" name="box"  class="label-title"/>
+                <label class="check">تذكرني على هذا الجهاز</label>
+              </div>
+              <div>
+                <input type="checkbox" name="box" class="label-title"/>
+                <label class="check">تذكر المشروع</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <ul class="flex prev-nxt">
+            <li><a href="#" class="btn prev">السابق</a></li>
+            <li><a href="#" class="btn next">التالى</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="copyright">
+      <div class="flex copyright-container container">
+        <div class="copyright-right flex">
+          <a href="https://elmawkaa.com/bookCall" class="copyright-call">
+            <p class="copyright-title">
+              <span class="copyright-orng">احجز مكالمة </span>مع أحد خبرائنا
+            </p>
+          </a>
+          <a href="https://www.linkedin.com/company/elmawkaa" target="_blank">
+            <ion-icon name="logo-linkedin" class="copyright-icon"></ion-icon>
+          </a>
+          <a href="https://www.instagram.com/elmawkaa/" target="_blank">
+            <ion-icon name="logo-instagram" class="copyright-icon"></ion-icon>
+          </a>
+          <a href="https://twitter.com/Elmawkaa1" target="_blank">
+            <ion-icon name="logo-twitter" class="copyright-icon"></ion-icon>
+          </a>
+          <a href="https://www.facebook.com/ElMawkaa/" target="_blank">
+            <ion-icon name="logo-facebook" class="copyright-icon"></ion-icon>
+          </a>
+        </div>
+        <p class="copyright-text">
+          حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة
+        </p>
+      </div>
+    </footer>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--Link JavaScript file-->
+    <script src="RFQForm.js"></script>
+  </body>
+</html>
